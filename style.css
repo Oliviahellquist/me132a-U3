@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(236, 232, 232);
+    color: rgb(73, 72, 72);
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+select{
+    height: 30px;
+}
