@@ -10,7 +10,7 @@ function changeTheme(){
     cssLink.href = `${selector.value}.css`;
     localStorage.setItem("theme", selector.value);
 }
-
+//saved in localstorage
 function setTheme(){
     let theme = localStorage.getItem("theme");
     console.log(theme);
