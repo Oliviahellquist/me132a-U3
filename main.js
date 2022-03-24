@@ -1,5 +1,5 @@
 "use strict";
-
+// light and dark theme
 let selector = document.querySelector("#theme-selector");
 let cssLink = document.querySelector("#theme");
 
@@ -13,8 +13,13 @@ function changeTheme(){
 //saved in localstorage
 function setTheme(){
     let theme = localStorage.getItem("theme");
-    console.log(theme);
     cssLink.href = `${theme}.css`;
 }
+ 
 
 setTheme();
+
+
+//===========
+
+
