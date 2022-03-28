@@ -1,5 +1,5 @@
 "use strict";
-// light and dark theme
+/*// light and dark theme
 let selector = document.querySelector("#theme-selector");
 let cssLink = document.querySelector("#theme");
 
@@ -21,5 +21,5 @@ setTheme();
 
 
 //===========
-
+*/
 

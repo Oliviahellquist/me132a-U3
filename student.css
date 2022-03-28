@@ -1,0 +1,36 @@
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.student{
+    width: 800px;
+    border-radius: 5px;
+    background-color: rgb(248, 243, 236);
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    border: 3px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    row-gap: 7px;
+    
+}
+
+.filter{
+    margin-bottom: 15px;
+}
+
+.course{
+    border: black solid 0.5px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+

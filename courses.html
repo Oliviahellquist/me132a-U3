@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="light.css" id="theme">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
 </head>
 <body>
-    <div id="wrapper">
-        <select name="theme-selector" id="theme-selector">
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-        </select>
-        <a href="index.html"><button type="button">Home</a></button>
-        <div id="search-bar2">
-            <lable for="search-course">Search Courses By Title:</lable>
-            <input type="search" placeholder="Course.." id="search-course"/>
-        </div>
-        <div id="results"></div>
-    
-    </div>
+    <h1>Courses</h1>
+
+    <div class="header">
+        <nav>
+            <a href="index.html"><button type="button">Home</a></button>
+            <a href="students.html"><button type="button">Students</a></button>
+            
+        
+        </nav> 
+    </div> 
+
+    <main>
+      <div class = "filter">
+        <label>Search Courses By Title</label>
+        <input type="text" placeholder="Write here..">
+      </div>
+      <div class="listContainer"></div>
+    </main>
 
     <script src="main.js"></script>
     <script src="database.js"></script>
