@@ -71,7 +71,7 @@ function DOMStudent(student){
         return container;
     }
 
-    //go through the courses
+//go through the courses
 //DATA
 function studentCourses(course){
     let courseName = DATABASE.courses.find( element => element.courseId == course.courseId ).title;
@@ -91,8 +91,8 @@ function studentCourses(course){
     let info = document.createElement("span");
     info.textContent = ` ${course[started].semester} ${course[started].year} (${course.passedCredits} of ${courseCredit})`;
     if ( course.passedCredits == courseCredit ) {
-        container.style.backgroundColor = "cornflowerblue";
-        container.style.color = "white";
+        container.style.backgroundColor = "rgb(145, 194, 136)";
+        container.style.color = "rgb(248, 243, 236)";
         
         
     }

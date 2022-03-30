@@ -1,33 +1,49 @@
 .listContainer{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     
 }
 
 .student{
-    width: 800px;
-    border-radius: 5px;
     background-color: rgb(248, 243, 236);
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 3;
-    border: 3px;
+    border-radius: 5px;
     padding: 20px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-    margin-bottom: 10px;
-    row-gap: 7px;
     
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.student > div > h2{
+    margin: 0px;
+    width: 100%;
+}
+
+.student > div:first-child{
+    width: 100%;
+}
+.student > div:first-child > h3{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.course{
+    border: gray solid 0.5px;
+    margin: 5px;
+    padding: 1%;
+    border-radius: 4px;
+}
+
+.course span:first-of-type{
+    display: block;
+    width: 100%;
 }
 
 .filter{
     margin-bottom: 15px;
 }
 
-.course{
-    border: black solid 0.5px;
-    display: flex;
-    flex-direction: row;
-}
 
 
 
