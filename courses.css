@@ -1,8 +1,7 @@
-.listContainer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
+
+
+.filter{
+    margin-bottom: 15px;
 }
 
 .course{
@@ -11,40 +10,51 @@
     padding: 20px;
     
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 0.5%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
-.course > div > h2{
-    margin: 0px;
-    width: 100%;
+.responsible > div > span{
+    border: gray solid 0.5px;
+    margin: 5px;
+    padding: 1%;
+    border-radius: 4px;
+  
+    background-color: rgb(221, 94, 94);
+    color: rgb(248, 243, 236);
 }
 
-.course > div:first-child{
-    width: 100%;
-}
-.student > div:first-child > h3{
+h3{
     color: rgba(0, 0, 0, 0.5);
 }
 
-.course{
+.staff > div > div > span{
     border: gray solid 0.5px;
     margin: 5px;
     padding: 1%;
     border-radius: 4px;
 }
 
-.course span:first-of-type{
+.students{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.student{
+    border: gray solid 0.5px;
+    margin: 5px;
+    padding: 1%;
+    border-radius: 4px;
+}
+
+.students span:first-of-type{
     display: block;
     width: 100%;
+
 }
 
-.filter{
-    margin-bottom: 15px;
-}
-
-#list {
-    display: flex;
-    flex-wrap: wrap;
+.student > span:first-of-type{
+    font-weight: bold;
 }
