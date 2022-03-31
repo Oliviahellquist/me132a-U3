@@ -1,5 +1,5 @@
 
-
+ 
 .filter{
     margin-bottom: 15px;
 }
@@ -10,9 +10,14 @@
     padding: 20px;
     
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
     margin: 0.5%;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course > div{
+    width: 100%;
 }
 
 .responsible > div > span{
@@ -37,12 +42,18 @@ h3{
 }
 
 .students{
-    margin-bottom: 20px;
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 15px;
     
 }
 
-.student{
+.student {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
     border: gray solid 0.5px;
     margin: 5px;
     padding: 1%;
@@ -56,5 +67,15 @@ h3{
 }
 
 .student > span:first-of-type{
+    font-weight: bold;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.students > div:first-of-type{
+    color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
 }

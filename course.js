@@ -38,7 +38,7 @@ let data = {
       })
     }
    }
-   main.prepend(DOMFilter(data));
+main.prepend(DOMFilter(data));
 
 
 function DOMCourse(course){
@@ -55,15 +55,14 @@ function DOMCourse(course){
     container.append(courseStudents(course));
 
     return container;
-
    
 function courseTitle(course){  
     let courseTitle = document.createElement("h2");
     let container = document.createElement("div");
 
-    courseTitle.textContent = course.title;
+    courseTitle.textContent = `${course.title} (${course.totalCredits} credits)`;
     container.appendChild(courseTitle);
-
+    
     return container; 
 }
  //Creating the responsible title and name 
@@ -105,10 +104,10 @@ function courseStaff(course){
 function courseStudents (course) {
    
     let students = DATABASE.students.filter(student =>
-      student.courses.find(c => c.courseID == course.courseID)
+      student.courses.find(c => c.courseId == course.courseId)
     )
     let studentArray = students.map(student => {
-      let specCourse = student.courses.find(c => c.courseID == course.courseID)
+      let specCourse = student.courses.find(c => c.courseId == course.courseId)
   
       const container = {}
   
@@ -123,7 +122,7 @@ function courseStudents (course) {
  
 
     studentArray.sort((a, b) => a.year - b.year);
-    let containerStudents = document.createElement("div")
+    let containerStudents = document.createElement("div");
     containerStudents.classList.add("students");
     container.append(containerStudents);
 
@@ -133,14 +132,14 @@ function courseStudents (course) {
     `;
 
     studentArray.forEach(student => {
-        let containerStudent = document.createElement("div")
-        containerStudent.classList.add('student')
+        let containerStudent = document.createElement("div");
+        containerStudent.classList.add("student");
     
-        let studentNameCred = document.createElement("span")
+        let studentNameCred = document.createElement("span");
         studentNameCred.textContent = `${student.firstName} ${student.lastName} (${student.passedCredits} credits)`
         containerStudent.appendChild(studentNameCred)
     
-        let courseInfo = document.createElement("span")
+        let courseInfo = document.createElement("span");
         courseInfo.textContent = `${student.semester} ${student.year}`
         containerStudent.appendChild(courseInfo)
     
