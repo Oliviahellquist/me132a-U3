@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="light.css" class="theme">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Students</title>
 </head>
@@ -15,6 +15,10 @@
         <nav>
             <a href="index.html"><button type="button">Home</a></button>
             <a href="courses.html"><button type="button">Courses</a></button>
+            <select name="theme-selector" id="theme-selector">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
         </nav> 
     </div> 
 
@@ -26,9 +30,10 @@
       <div class="listContainer"></div>
     </main>
 
-    <script src="main.js"></script>
+    
     <script src="database.js"></script>
     <script src="student.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
 

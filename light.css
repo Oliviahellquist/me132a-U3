@@ -2,6 +2,21 @@ body{
     background-color: rgb(236, 232, 232);
     color: rgb(73, 72, 72);
 }
-h1, a, select{
-    color: rgb(180, 53, 21);
+
+h1{
+    color: rgb(145, 194, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    color: rgb(145, 194, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
